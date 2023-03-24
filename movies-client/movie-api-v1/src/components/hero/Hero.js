@@ -22,11 +22,13 @@ const Hero = ({movies}) => {
                                                 <h4>{movie.title}</h4>
                                             </div>
                                             <div className='movie-buttons-container'>
+                                                <Link to={`/Trailer/${movie.trailerLink.substring{/* trailer link */}}`}>
                                                 <div className='play-button-icon-container'>
                                                     <FontAwesomeIcon className='play-button-icon'
                                                         icon = {faCirclePlay}
                                                     />
                                                 </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
