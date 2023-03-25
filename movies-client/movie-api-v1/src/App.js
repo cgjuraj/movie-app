@@ -30,6 +30,10 @@ function App() {
     
   }
 
+  const getMovieData = async (movieId) => {
+    
+  }
+
   useEffect(() => {
     getMovies();
   },[])
