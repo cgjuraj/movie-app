@@ -13,7 +13,7 @@ function App() {
 
   const [movies, setMovies] = useState();
   const [movie, setMovie] = useState();
-  const [reviews, setReviews] = useState();
+  const [reviews, setReviews] = useState([]);
 
 
   const getMovies = async () =>{
@@ -52,6 +52,7 @@ function App() {
     }
     catch (error)
     {
+      console.error(error)
 
     }
   }
